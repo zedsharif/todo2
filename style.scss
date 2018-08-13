@@ -1,0 +1,77 @@
+@import 'color';
+@import 'dimensions';
+*{
+	box-sizing:border-box;
+}
+input[type=text]
+	{
+		width:$dimen-width-input;
+		height:$dimen-height-input;
+		font-size:$dimen-font-size;
+	}
+button{
+		background-color: $color-red;
+		color: $color-red;
+	}
+	ul{
+		margin-left:$dimen-margin;
+		margin-right:$dimen-margin;
+		
+	}
+	ul li{
+		cursor: pointer;
+		background-color: $color-white;
+		list-style-type: none;
+		text-align:$dimen-text-align;
+	}
+	ul li:nth-child(odd){
+		background-color:$color-black;
+	}
+	.uk-button{
+		background-color:$color-white;
+		color: $color-black;
+	}
+	.uk-button:hover{
+		background-color: $color-white;
+	}
+	ul li.checkbox{
+		text-decoration: line-through;
+	}
+	.close {
+		position: absolute;
+		color: $color-red;
+		align:$dimen-align;
+		right:$dimen-zero-dis;
+		direction: ltr;
+}
+
+.close:hover {
+  background-color: $color-red;
+  color: $color-white;
+}
+
+
+.split {
+    height:$dimen-height-split;
+    width:$dimen-width-split;
+    position: fixed;
+    z-index:$dimen-index;
+    top:$dimen-zero-dis;
+    overflow-x: hidden;
+    
+}
+
+.left {
+    left:$dimen-zero-dis;
+    background-color:$color-black;
+}
+
+.right {
+    right:$dimen-zero-dis;
+    background-color:$color-red;
+}
+.title2{
+	color: $color-white;
+	font-size:$dimen-font-size;
+	margin-top:$dimen-margin;
+}
